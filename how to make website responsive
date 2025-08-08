@@ -1,0 +1,85 @@
+WHAT IS RESPONSIVE DESIGN?
+
+
+1.Endless new resolution and devices are difficult to
+   supports seperately for web developer.
+2.Responsive design is a way for a web developer to make   
+    his website adapt to all the devices and resolutions
+3. Responsive design is a necessity  and  not a luxury
+    anymore!
+-----------------------------------------------------------------------------------
+ VARIOUS WAY TO ACHEIVE RSPONSIVE DESIGN
+
+	1. Setting up the viewport
+	2.Use  max-width / max-height
+	3. Using CSS Media Queries
+	4.Using em/rem/vh/vw units over pixels
+-----------------------------------------------------------------------------------
+# units :
+a. em unit  :    em unit set font size as parent container font size relative 
+eg:     
+			
+
+<!DOCTYPE html>
+       <html>
+                                                       <head>
+                                                       <title> em </title>
+                                                           <style>
+                                                         .container{
+                                                           font-size: 10px;
+                                                           text-align: center;
+                                                             }
+                                                      #first1{
+                                                       font-size: 10em;
+                                                      /* This 10em indicates that this child fond size is 
+                                                        is 10 times to its parent which is nearly
+                                                         10 *10 =100px */
+
+                                                             }
+                                                       </style>
+                                                      </head>
+                                                         <body>
+                                                      <div class="container">
+                                                   <h1 id="first1">This is first heading</h1>
+                                                      <h1 id="2">this is second heading</h1>
+                                                   <h1 id="3">this is third heading</h1>
+                                                  </div>
+                                                   </body>
+</html>
+
+   b. rem unit :    Unlike em, which is relative to the font size of its parent element, rem always refers to the font size of the <html> element. 
+                    This provides a consistent and predictable base for all rem units throughout your stylesheet, regardless of nesting depth.
+Scalability and Accessibility:
+              Setting font sizes and other lengths (like padding, margin, width, height) using rem units allows for easy scaling of the entire layout by simply adjusting the font-size of the <html> element.
+              This is particularly beneficial for accessibility, as users can adjust their browser's default font size, and rem units will scale accordingly, improving readability for those with vision impairments.
+                Predictable behavior:
+               Because rem is always based on the root element, it avoids the compounding effect that can occur with em units in deeply nested elements, where em values can become progressively larger or smaller than intended due to inherited font sizes.z
+ 
+    c. vh unit : This is basically stands for viewport height
+                 -Represents 1% of the viewport's height. For example, 
+                  50vh would set an element's height to 50% of the current viewport height.  
+
+                                                         
+	 d. vw unit : -This is basically stand for vieport width       -
+                -Represents 1% of the viewport's width. For example, 
+                 25vw would set an element's width to 25% of the current viewport width.
+
+
+
+
+
+Wrapping Up
+Let’s have a quick bullet point recap of what we’ve covered:
+
+rem and em units are computed into pixel values by the browser, based on font sizes in your design.
+em units are based on the font size of the element they’re used on.
+rem units are based on the font size of the html element.
+em units can be influenced by font size inheritance from any parent element
+rem units can be influenced by font size inheritance from browser font settings.
+
+Use em units for sizing that should scale depending on the font size of an element other than the root.
+Use rem units for sizing that doesn’t need em units, and that should scale depending on browser font size settings.
+Use rem units unless you’re sure you need em units, including on font sizes.
+Use rem units on media queries
+Don’t use em or rem in multi column layout widths - use % instead.
+Don’t use em or rem if scaling would unavoidably cause a layout element to break
