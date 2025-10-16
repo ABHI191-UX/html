@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox</title>
+        <style>
+            .container{
+                height:  400px;
+                max-width:   100%;
+                border: 2px solid black;
+                /* initialize container as flex */
+                display: flex;
+                flex-wrap: nowrap;
+                
+                
+               /* Flex properties for flex container */
+
+               /* Default value of flex-direction is row */
+                /* flex-direction: row; */
+                /* flex-direction: column;
+                flex-direction: row-reverse;
+                flex-direction: column-reverse; */ 
+
+                /* how to use justify content*/ 
+
+                /* justify-content: space-evenly;
+                justify-content: last baseline; 
+                justify-content: center;
+                justify-content: flex-start;        
+                justify-content: flex-end; */
+                /* justify-content: space-between; */
+                /* justify-content: space-around; */
+                /* justify-content: stretch; */
+                
+                /* how to use align items */
+                /* align-items: stretch; */
+                /* align-items: center; */
+                /* align-items: flex-start; */      
+                /* align-items: flex-end; */
+                /* align-items: baseline; */
+                /* how to use align content */
+                /* align-content: stretch; */
+                /* align-content: center; */
+                /* align-content: flex-start; */
+                /* align-content: flex-end; */
+                /* align-content: space-between; */
+
+                /* align-content: space-around; */
+                /* align-content: space-evenly; */
+                /* align-content: last baseline; */
+                   
+
+                align-content: center;
+
+            }
+            .item{
+                margin: 10px;
+                background-color: tomato;
+                border: cadetblue 2px solid;
+                width: 131px;
+                height: 146px;
+                
+                
+                
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>how to use flex box</h1>
+        <div class="container">
+             <div class="item" id="item1">first box</div>
+             <div class="item" id="item2">second box</div>
+             <div class="item" id="item3">Third box</div>
+             <div class="item" id="item4">Forth box</div>
+             <div class="item" id="item5">Fifth box</div>
+             <div class="item" id="item6">sixth box</div> 
+        </div>
+    </body>
+</html>
+
+
+================================================================================================================================================================================================================
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox</title>
+        <style>
+            .container{
+                height:  400px;
+                max-width:   100%;
+                border: 2px solid black;
+                /* initialize container as flex */
+                display: flex;
+                
+                
+                
+              
+                   
+
+                align-content: center;
+
+            }
+            .item{
+                margin: 10px;
+                background-color: tomato;
+                border: cadetblue 2px solid;
+                width: 131px;
+                height: 146px;
+                
+                
+                
+            }  
+              /* THIS PROPERTY USE ON PERTICULAR ELEMENT NOT ON PARENT */
+
+            /* imp */
+            /* Flex properties for flex items */
+            /* 1. order:   with the help of order property we can change the order of flex items */ 
+            /* 2. flex-grow:  with the help of flex-grow property we can change the size of flex items */
+            /* 3.  flex-shrink :  flex shirk is f=just like flex grow but it is when we shrink screen it
+                                also feel like the element where we use this attribute  is shrink use tbody make 
+                                resoncive  */
+             /* 4.flex-basis  : With the help of flex basis property we can change the Default size of
+                                that element. */
+                #item1{
+                    /* order: 20;
+                    flex-grow: 1;
+                    flex-shrink: 2; */
+                    flex-basis: 200px;
+                       }
+                #item2{
+                    /* order: 40;
+                    flex-grow: 2;
+                    flex-shrink:3;
+                    */
+                    flex-basis: 320px;
+
+                      }
+                #item3{
+                   /* ; order: 1;
+                    flex-grow: 3;
+                    flex-shrink: 1;.*/
+                      }
+        </style>
+    </head>
+    <body>
+        <h1>how to use flex box</h1>
+        <div class="container">
+             <div class="item" id="item1">first box</div>
+             <div class="item" id="item2">second box</div>
+             <div class="item" id="item3">Third box</div>
+           
+        </div>
+    </body>
+</html>
+
+

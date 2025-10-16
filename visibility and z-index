@@ -1,0 +1,34 @@
+      #visibility and z-index
+		
+                               1.visibility : 
+			a. visibilty has value = collapse, hidden , visible, initial, inherit, unset.
+			b.visiblity default value has visible.
+			c. hidden= it is hide the content/element. eg (box)
+
+			Q.WHAT is  the differnce in (display=" none") and (visibility=hidden;)
+				1. visibity hidden only hide element or content but aquire
+				    space.
+				2.display none not aquired space after hide element.
+
+
+		2. z-index: 
+			a. we use z- index when we need one box(element) on another box(element).
+			b. z-index work only on position absolute, relative, fixed, sticky.
+			    but not a static which is default element position.
+
+		                c.          #box1{
+                                       position: relative;
+    				                           top: 49px;
+			                                  z-index: -35;
+                                       background-color: red;
+                                                                           }
+                                #box2{
+                                       position: relative;
+                                       top: 14px;
+                                       z-index: 1;
+				                            }
+
+
+
+
+
