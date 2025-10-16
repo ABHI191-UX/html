@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid: spanning mutiple rows and columms in grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(5,auto) ;
+            grid-template-rows: repeat(3,3fr);
+            grid-gap: 1rem;
+        }
+         .box{
+            border: 2px solid limegreen;
+            background-color: purple;
+            padding: 23px;
+            color:#fff  ;
+        }
+        .box:first-child{
+            grid-column-start: 1;
+            grid-column-end: 3;
+             grid-row-start: 1;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item -1</div>
+        <div class="box">item -2</div>
+        <div class="box">item -3</div>
+        <div class="box">item -4</div>
+        <div class="box">item -5</div>
+        <div class="box">item -6</div>
+        <div class="box">item -7</div>
+        <div class="box">item -8</div>
+        <div class="box">item -1</div>
+        <div class="box">item -2</div>
+        <div class="box">item -3</div>
+        <div class="box">item -4</div>
+        <div class="box">item -5</div>
+        <div class="box">item -6</div>
+        <div class="box">item -7</div>
+        <div class="box">item -8</div>
+        <div class="box">item -1</div>
+        <div class="box">item -2</div>
+        <div class="box">item -3</div>
+        <div class="box">item -4</div>
+        <div class="box">item -5</div>
+        <div class="box">item -6</div>
+        <div class="box">item -7</div>
+        <div class="box">item -8</div>
+        
+         
+    </div>
+</body>
+</html>

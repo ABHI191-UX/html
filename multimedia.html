@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia Page</title>
+        <style>
+            span{
+                scroll-timeline-name: my-scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <marquee behavior="scroll" direction="right"><h1>Welcome to the Multimedia Page</h1></marquee>
+       <marquee behavior="scroll" direction="left">This page contains various multimedia elements.</marquee>
+        <span>
+            <marquee behavior="scroll" direction="left">Welcome to the Multimedia Page!</marquee>
+        </span>
+        <h2 style="margin-left: 500px;">Image Example</h2>
+        <span>
+             <marquee behavior="scroll"  bgcolor="pink" scrollamount="95" direction="left"><img  height="200px" src="homework/imc/a3.jpg" alt=""></marquee>
+        </span>
+
+        <div style="margin-top: 20px;" onmouseover="this.stop()" onmouseout="this.start()">
+            <marquee behavior="scroll" direction="left"  scrollamount="20" bgcolor="lightblue">
+                <img height="200px" src="homework/imc/a4.jpg" alt="">
+                <img height="200px" src="homework/imc/b1.jpg" alt="">
+                <img  height="200px" src="homework/imc/b2.jpg" alt="">
+                <img height="200px" src="homework/imc/b3.jpg" alt="">
+            </marquee>
+
+        </div>
+
+        <div class="video">
+            <video width="400" height="300" bgcolor="pink" src="homework/imc/video.mp4" controls poster="homework/imc/b4.jpg"></video>
+        </div>
+    </body>
+</html>

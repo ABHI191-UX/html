@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular expression 2</title>
+    </head>
+    <body>
+        <form align="center">
+             <!-- here we only give single digit -->
+
+            Name :
+            <input type="text" name="name" pattern="\d" placeholder="put value 0-9"> <br><br>
+             
+            <!-- here we ony give two value because we use only \d \d -->
+            name2:
+            <input type="text" name="NAME"  pattern="\d \d">
+            <br>
+            <p>here we use capital D</p> 
+            
+            <br><br>
+            <p>\s	:- It refers single blank space.</p>
+            <input type="text" name="name" pattern="\d\s\d" placeholder="\S">
+        <br><button>submit</button>
+
+        </form>
+    </body>
+</html>

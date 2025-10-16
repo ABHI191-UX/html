@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #user:required{
+            border: 2px solid red;
+            box-shadow: 2px 3px 9px red;
+            text-decoration: none;
+        }
+          #user+span{
+            display: none;
+        }
+        #user:invalid+span
+        {
+            display: block;
+            color: red;
+            
+        }
+        #user:optional
+        {
+             border: 2px solid rgb(56, 206, 26);
+            box-shadow: 2px 3px 9px rgb(13, 245, 117);
+        }
+        span{
+            width: 200px;
+            margin: 10PX;
+            height: 150xs;
+            
+            background-color: white;
+            border: black 1px solid;
+            box-shadow: 10px 2px 1px rgb(0,0, 0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>user</dt>
+        <dd>
+            <input type="text" id="user" required>
+            <span>it is required</span>
+        </dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shodow</title>
+    <style>
+        .cart{
+            display: flex;    
+        }
+        .box{
+            width:auto;
+            height: auto;
+            background-color: blueviolet;
+             flex-direction: column;
+             margin: 10px 23px;
+             box-shadow: -10px -10px 10px 2px plum ;
+             /* box-shadow: inset 10px 10px 10px purple; */ 
+             /* when we want internal box shadow */
+        }
+        .text-shadow{
+            border: black 2px solid;
+            background-color: darkcyan;
+        }
+       .text{
+         font-size: 300px;
+         text-shadow: 10px 10px white;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: black;
+       }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="cart" id="cart-x">
+            <div class="box" id="box1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi.</p>
+            </div>
+            <div class="box" id="box2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi.</p>
+            </div>
+            <div class="box" id="box3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi.</p>
+            </div>
+            <div class="box" id="box4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, excepturi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-shadow">
+        <p class="text" id="text1">Abhijeet wavare</p>
+    </div>
+
+</body>
+</html>

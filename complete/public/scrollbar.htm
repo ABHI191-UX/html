@@ -1,0 +1,76 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slim Scrollbar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+      }
+
+      .scroll-container {
+        display: flex;
+        overflow-x: auto; /* Horizontal scroll enable */
+        gap: 15px;
+        padding: 20px;
+        scroll-behavior: smooth; /* Smooth scrolling */
+        background: transparent;
+      }
+
+      /* Slim Scrollbar */
+      .scroll-container::-webkit-scrollbar {
+        height: 3px; /* बहुत पतली scrollbar */
+      }
+
+      .scroll-container::-webkit-scrollbar-track {
+        background: transparent; /* Track transparent */
+      }
+
+      .scroll-container::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.4); /* हल्का transparent */
+        border-radius: 3px; /* Rounded */
+      }
+
+      .scroll-container::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.6); /* Hover पर dark */
+      }
+
+      /* Boxes */
+      .box {
+        min-width: 200px;
+        height: 150px;
+        background: #ff7f50;
+        border-radius: 12px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Slim Horizontal Scroll</h1>
+    <div class="scroll-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+

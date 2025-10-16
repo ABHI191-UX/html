@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     .box{
+        width: 300px ;
+        height: 300px;
+        border: 2px solid red;
+        border-radius: 100%;
+        animation-name: move;
+       animation-timing-function: ease-in-out;
+       animation-duration: 10s;
+       animation-iteration-count: infinite;
+      
+       
+     }
+     
+     
+    @keyframes move{
+      0%{
+         transform: translateX(0px );
+         transition: 2s;
+      }
+      25%{
+        transform: translateX(500px);
+        background-color: aquamarine;
+        transition: 2s;
+      }
+       50%{
+        transform: translateY(300px);
+        background-color: rgb(25, 95, 247);
+         transition: 2s;
+      }
+       75%{
+        transform: translateY(-300px);
+        background-color: rgb(233, 16, 27);
+         transition: 2s;
+      }
+      100%{
+        transform: translate(0px);
+      }
+    }
+     
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"  id="box-a"></div>
+        <div class="box" id="box-b"></div>
+        <div class="box" id="box-c"></div>
+        <div class="box" id="box-d"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>this is the simple registration form </title>
+    <style>
+        .form {
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid black;
+            overflow: scroll;
+            padding-left: 20PX;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: arial;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <dl>
+            <dt>
+                <p>File:</p>
+            </dt>
+            <dd> <input type="file" placeholder="select yor file" multiple></dd>
+        </dl>
+        <dl>
+            <dt>
+                <p>color picker:</p>
+            </dt>
+            <dd>
+                <input type="color" name="color">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <p> Do you want to submit:</p>
+            </dt>
+            <dd>
+                <input type="radio" value="Yes" name="chose">Yes
+                <input type="radio" value="no" name="chose">No
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <p>Computer languages:</p>
+            </dt>
+            <dd>
+                <ul>
+                    <li><input type="checkbox" name="lan" value="C language"> C language</li>
+                    <li><input type="checkbox" name="lan" value="python"> python</li>
+                    <li><input type="checkbox" name="lan" value="visual basic"> visual basic</li>
+                    <li><input type="checkbox" name="lan" value="java">java</li>
+                    <li><input type="checkbox" name="lan" value="cpp">cpp</li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</body>
+
+</html>

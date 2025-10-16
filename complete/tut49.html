@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: ;
+        }
+      .container{
+        display: grid;
+        gap: 1.2rem;
+        grid-template-areas: 
+        'a1 a1 a1 a1'
+        'a2 a3 a4 a5'
+        'a2 a6 a7 a5'
+        'a2 a6 a8 a9'
+        ;
+
+      }
+      .box{
+        background-color: black;
+        width: auto;
+        height: auto;
+        color: white;
+        font-size: 23px;
+      }
+      #a1{grid-area: a1; height: 200px;}
+       #a2{grid-area: a2;
+       }
+       #a3{grid-area: a3; height: 50px;}
+       #a4{grid-area: a4; height: 100px;}
+       #a5{grid-area: a5;}
+       #a6{grid-area: a6;
+    margin-top: -51px;}
+       #a7{grid-area: a7; height: 50px;}
+      
+       #a8{grid-area: a8; height: 50px;}
+       #a9{grid-area: a9; height: 50px;}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="a1">1</div>
+        <div class="box" id="a2">2</div>
+        <div class="box" id="a3">3</div>
+        <div class="box" id="a4">4</div>
+        <div class="box" id="a5">5</div>
+        <div class="box" id="a6">6</div>
+        <div class="box" id="a7">7</div>
+        <div class="box" id="a8">8</div>
+        <div class="box" id="a9">9</div>
+    </div>
+</body>
+</html>

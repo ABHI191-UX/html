@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>disabled and read only value</title>
+        <style>
+            body{
+                font-style: arial;
+                color: aqua;
+            }
+           .container{
+          
+            align-content: center;
+            background-color: lightskyblue;
+            width: 100vw;
+            height: 100vh;
+           
+          
+           }
+           .box{
+            align-items: center;
+            width: 36%;
+            height: 294px;
+            margin: auto;
+            font-weight: bolder;
+            border: 2px solid rgb(17, 15, 15);
+            background: white;
+           }
+           form {
+                font-style: arial;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 10px 20px 10px 20px;
+            color: #2196F3;
+            
+           }
+           input {
+            background-color: #ffffff;
+            text-align: center;
+            border: 1px transparent black;
+            text-box: none;
+            font-style: arial;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 10px 20px 10px 20px;
+            color: #2196F3;
+            
+          
+           }
+                button{
+                         margin-top: 20px;
+                         background-color: #2196F3;
+                         width: 86%;
+                         height: 37px;
+                         /* border-radius: 14%; */
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                  <form action="get">
+                   >
+                      <div>
+                            Full Name : <input type="text" size="57px" autofocus value="Enter your full Name:" required>
+                      </div>
+                      <div>
+                             &nbsp; Country: <input type="text" size="57px"  value="India" readonly>
+                       </div>
+                       <div>
+                        User Password : <input type="password" name="password" autofocus  size="57px"  placeholder="minlen8 to maxlen 16 and in form of A to Z"  minlength="8" maxlength="16" pattern="[ A-Z]">
+                       </div>
+                        <div>
+                            User Gmail: <br> <input type="email" name="email" autofocus placeholder="eg,.User_name@gmail.com"  size="57px"57
+                        </div>
+
+                       <div align="center"><button>login
+                       </button></div>
+                  </form> 
+              </div>
+        </div>
+    </body>
+</html>

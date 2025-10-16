@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>regular expression</title>
+    <style>
+    input{
+        margin: 10px 20px 0px 1px;
+        scrollbar-width: 50px;
+       
+    }
+    p{
+        font-size: 15px;
+        color: blue;
+        font-weight: bold;
+    }
+    </style>
+    
+    </head>
+    <body>
+<form align="center" border="1"> 
+    <p>password must be 4 to 15 chars long contain letter number and at least 
+	one special chars.</p>
+    password1 :<input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*[\d])(?=.*[^A-Za-z0-9]).{4,15}$">
+       <br>
+       <p>Password  must be 4 to 10 chars long, alpha numeric with at least one uppercase 
+	letter, number, and special chars.</p>
+    password2 :<input type="password" name="password2" pattern="^(?=.*[A-Z]) (?=.*\d)(?=.*[^A-Za-z0-9]).{4,10}$">   
+    <button>submit</button>
+</form>
+    </body>
+</html>

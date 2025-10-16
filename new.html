@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import "https://fonts.googleapis.com/css2?family=Nabla&display=swap";
+
+@font-palette-values --blue-nabla {
+  font-family: Nabla;
+  base-palette: 2; /* this is Nabla's blue palette */
+}
+
+@font-palette-values --yellow-nabla {
+  font-family: Nabla;
+  base-palette: 7; /* this is Nabla's yellow palette */
+}
+
+p {
+  font-family: "Nabla", fantasy;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.yellowPalette {
+  font-palette: --yellow-nabla;
+}
+
+.bluePalette {
+  font-palette: --blue-nabla;
+}
+
+.mixedPalette {
+  font-palette: palette-mix(in lch, --blue-nabla 55%, --yellow-nabla 45%);
+
+}
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 100px;
+  text-align: center;
+}
+
+p + div {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  margin-left: 100px;
+}
+.no-perspective-box {
+  transform: rotateX(-15deg) rotateY(30deg);
+}
+
+.perspective-box-far {
+  transform: perspective(9cm) rotateX(-15deg) rotateY(30deg);
+}
+
+.perspective-box-closer {
+  transform: perspective(4cm) rotateX(-15deg) rotateY(30deg);
+}
+
+.top {
+  background-color: skyblue;
+  transform: rotateX(90deg) translate3d(0, 0, 50px);
+}
+
+.left {
+  background-color: pink;
+  transform: rotateY(-90deg) translate3d(0, 0, 50px);
+}
+
+.front {
+  background-color: limegreen;
+  transform: translate3d(0, 0, 50px);
+}
+</style>
+</head>
+<body>
+    <p class="yellowPalette">THANK YOU </p>
+<p class="bluePalette">TO</p>
+<p class="mixedPalette">EVERYONE</p>
+<p>Without perspective:</p>
+<div class="no-perspective-box">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>
+
+<p>With perspective (9cm):</p>
+<div class="perspective-box-far">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>
+
+<p>With perspective (4cm):</p>
+<div class="perspective-box-closer">
+  <div class="face front">A</div>
+  <div class="face top">B</div>
+  <div class="face left">C</div>
+</div>
+</body>
+</html>
